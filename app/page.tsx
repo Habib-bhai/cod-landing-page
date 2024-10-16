@@ -7,7 +7,7 @@ export default function Home() {
     <>
     <div id="hero">
       {/* hero section */}
-    <Image src={"/hero.jpg"} width={0 } height={0} className="w-screen h-screen object-cover" alt="bg"/>
+    <Image src={"/hero.jpg"} width={200 } height={200} className="w-screen h-screen object-cover" alt="bg"/>
        
          <Navbar/>
       
