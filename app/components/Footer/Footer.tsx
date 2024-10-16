@@ -21,10 +21,10 @@ export default function Footer() {
         <Image src={"/cod-en.png"} height={50} width={50} alt="cod-hub-esrb-en" className="w-28 "/>
       </div>
 
-      <p className="font-heading mt-5 text-gray-300 w-[400px] md:w-[500px] h-32">© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY LEAGUE, MODERN WARFARE, CALL OF DUTY BLACK OPS, CALL OF DUTY WARZONE, and CALL OF DUTY VANGUARD are trademarks of Activision Publishing, Inc. All other trademarks and trade names are the property of their respective owners.</p>
-      <p className="font-heading  text-gray-300 w-[400px] md:w-[500px] h-32">© 2024 Compass International Pictures, Inc. All Rights Reserved.</p>
+      <p className="font-heading mt-5 text-gray-300 w-[370px] md:w-[500px] h-32">© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY LEAGUE, MODERN WARFARE, CALL OF DUTY BLACK OPS, CALL OF DUTY WARZONE, and CALL OF DUTY VANGUARD are trademarks of Activision Publishing, Inc. All other trademarks and trade names are the property of their respective owners.</p>
+      <p className="font-heading  text-gray-300 w-[370px] md:w-[500px] h-32">© 2024 Compass International Pictures, Inc. All Rights Reserved.</p>
 
-     <Link href={"#hero"}> <button className="text-white absolute bottom-9 left-24 md:left-1/2 text-4xl font-heading font-extrabold w-64 border-[2px] rounded-2xl ">GO BACK</button> </Link>
+     <Link href={"#hero"}> <button className="text-white text-4xl font-heading font-extrabold w-64 border-[2px] rounded-2xl ">GO BACK</button> </Link>
     </div>
   )
 }
