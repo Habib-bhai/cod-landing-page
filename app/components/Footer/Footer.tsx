@@ -5,13 +5,13 @@ export default function Footer() {
   return (
     <div className="w-screen relative bg-black flex flex-col justify-center items-center mt-10 ">
       <div className="flex flex-wrap mt-10 justify-center items-center gap-10">
-        <Link href={"https://www.activision.com/legal"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-xl">Legal</p></Link>|
-        <Link href={"https://www.activision.com/legal/terms-of-use"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-xl">Terms of Use</p></Link>|
-        <Link href={"https://www.activision.com/legal/privacy-policy"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-xl">Privacy Policy</p></Link>|
-        <Link href={"https://careers.activision.com/"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-xl">Careers</p></Link>|
-        <Link href={"https://www.activision.com/legal/cookie-policy"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-xl">Cookie Policy</p></Link>|
-        <Link href={"https://support.activision.com/"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-xl">Support</p></Link>|
-        <Link href={"https://www.callofduty.com/values"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-xl">Code of Conduct</p></Link>|
+        <Link href={"https://www.activision.com/legal"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-lg">Legal</p></Link>|
+        <Link href={"https://www.activision.com/legal/terms-of-use"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-lg">Terms of Use</p></Link>|
+        <Link href={"https://www.activision.com/legal/privacy-policy"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-lg">Privacy Policy</p></Link>|
+        <Link href={"https://careers.activision.com/"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-lg">Careers</p></Link>|
+        <Link href={"https://www.activision.com/legal/cookie-policy"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-lg">Cookie Policy</p></Link>|
+        <Link href={"https://support.activision.com/"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-lg">Support</p></Link>|
+        <Link href={"https://www.callofduty.com/values"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-lg">Code of Conduct</p></Link>|
       </div>
 
       <p className="h-[1px] w-screen bg-white/50 my-5"></p>
