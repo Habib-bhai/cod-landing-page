@@ -6,7 +6,7 @@ function Navbar() {
   const [display, setDisplay] = useState("hidden")
   return (
     <>
-      <div className="z-30 w-screen h-10 bg-gray-800 bg-opacity-30 backdrop-blur-3xl absolute top-3 flex justify-evenly items-center font-gaming text-xl ">
+      <div id="navbar" className="z-30 w-screen h-10 bg-gray-800 bg-opacity-30 backdrop-blur-3xl absolute top-3 flex justify-evenly items-center font-gaming text-xl ">
       <svg width="138" height="24" viewBox="0 0 138 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M40.4112 0H33.7984V24H45.0392V19.472H40.4112V0Z" fill="white" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M52.784 0H46.1712V24H57.412V19.472H52.784V0Z" fill="white" />
@@ -31,11 +31,10 @@ function Navbar() {
 
         <div className={`w-screen  md:hidden ${display} flex-col gap-10 justify-center items-center bg-gray-800 md:bg-opacity-30 bg-opacity-85 backdrop-blur-3xl absolute top-12 `}>
         <svg onClick={()=> setDisplay("hidden")} xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        <p className="text-2xl">Home</p>  
-        <p className="text-2xl">About</p>  
-        <p className="text-2xl">Book Yours</p>  
+        <Link href={"/"}><p className="text-2xl">Home</p></Link>  
+        <Link href={"/about"}><p className="text-2xl">About</p></Link>  
+        <Link href={"/book-yours"}><p className="text-2xl">Book Yours</p></Link>  
         </div>
-
       </div>
     </>
   )
