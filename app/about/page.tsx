@@ -17,7 +17,7 @@ export default function AboutPage() {
          <div className="w-screen flex justify-center items-center">
             <div className="flex justify-center items-center flex-wrap gap-5 absolute bottom-5" >
 
-                <Image onClick={  (e) =>   setSliderImageLink("/call-of-duty-mobile-hero-a.jpg")
+                <Image onClick={  () =>   setSliderImageLink("/call-of-duty-mobile-hero-a.jpg")
                   } src={"/call-of-duty-mobile-hero-a.jpg"} height={100} width={100} alt="card1" className={`w-40 h-24 border-[1px] border-teal-200 rounded-2xl scale-105`}/>
 
                 <Image onClick={ () =>  setSliderImageLink("/blackCell.jpg")
@@ -32,7 +32,7 @@ export default function AboutPage() {
 
            <h1 className="text-5xl font-bold">Our Mission</h1>       
            <p className="h-[1px] w-screen bg-gray-300/50 mt-8"></p>
-           <p className="text-xl mt-8 px-5">At Activision, we strive to create the most iconic brands in gaming and entertainment. We’re driven by our mission to deliver unrivaled gaming experiences for the world to enjoy, together.  Home to iconic franchises like Call of Duty®, Crash Bandicoot™, and Tony Hawk’s™ Pro Skater™, we're a global leader in interactive entertainment. Our goal? Delight millions with innovative, fun, and engaging games. With a legacy of success, we're pushing boundaries with cutting-edge technology and inclusive practices. Join us in delivering unforgettable entertainment and seize the chance to level up your career.</p>
+           <p className="text-xl mt-8 px-5">At Activision, we strive to create the most iconic brands in gaming and entertainment. We&apos;re driven by our mission to deliver unrivaled gaming experiences for the world to enjoy, together.  Home to iconic franchises like Call of Duty®, Crash Bandicoot™, and Tony Hawk&apos;s™ Pro Skater™, we&apos;re a global leader in interactive entertainment. Our goal? Delight millions with innovative, fun, and engaging games. With a legacy of success, we&apos;re pushing boundaries with cutting-edge technology and inclusive practices. Join us in delivering unforgettable entertainment and seize the chance to level up your career.</p>
 
            <h1 className="text-5xl font-bold mt-20">Activate Your Future</h1>
            <p className="h-[1px] w-screen bg-gray-300/50 mt-8"></p>
