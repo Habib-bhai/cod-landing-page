@@ -46,7 +46,7 @@ export default function AboutPage() {
               </div>   
 
 
-              <Link href={"https://www.activision.com/company/diversity-inclusion#values"}> <button className="w-[30%] md:w-[15%] h-16 rounded-3xl  bg-blue-600/60 hover:bg-blue-600 transition-colors duration-150 ease-in-out border-[3px] border-blue-800 font-bold text-xl ">Learn More</button></Link>
+              <Link href={"https://www.activision.com/company/diversity-inclusion#values"}> <button className="w-[40%] md:w-[15%] h-16 rounded-3xl  bg-blue-600/60 hover:bg-blue-600 transition-colors duration-150 ease-in-out border-[3px] border-blue-800 font-bold text-xl ">Learn More</button></Link>
        </div>           
     </>
   )
