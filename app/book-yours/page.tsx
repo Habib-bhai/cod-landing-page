@@ -56,20 +56,20 @@ export default function BookYours() {
 
 
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="text-black" />
+            <CarouselNext className="text-black" />
           </Carousel>
 
         </div>
 
-        <div className="w-[25vw]  bg-black  flex flex-col justify-center items-center  border-[1px] border-white shadow-lg shadow-black font-heading">
+        <div className="mt-32 w-[70vw] md:w-[25vw]  bg-black  flex flex-col justify-center items-center  border-[1px] border-white shadow-lg shadow-black font-heading">
           {/* Choose your platform Section */}
 
           <div >
             <Image src={"/BO6_Banner.png"} height={100} width={100} alt="logo" className="w-72 h-16" />
           </div>
 
-          <Tabs defaultValue="account" className="w-full flex flex-col justify-center items-center">
+          <Tabs defaultValue="account" className="my-5 w-full flex flex-col justify-center items-center">
             <TabsList className="bg-gray-900 hover:bg-gray-800 flex-wrap rounded-none w-[80%] h-12 gap-5">
               <TabsTrigger value="Vault" >VAULT EDITION</TabsTrigger>
               <TabsTrigger value="Standard" >STANDARD</TabsTrigger>
