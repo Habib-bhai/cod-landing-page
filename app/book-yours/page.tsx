@@ -10,13 +10,15 @@ import {
 } from "@/components/ui/carousel"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from "react"
+import { title } from "process"
 
 
 export default function BookYours() {
   // const [image, setImage]= useState("/blackOps/blackops6.png")
   const [activeIndex, setActiveIndex] = useState(0);
+  const [logoIndex, setLogoIndex] = useState(0);
 
   const images = [
     "/blackOps/blackops6.png",
@@ -24,6 +26,14 @@ export default function BookYours() {
     "/blackOps/BO6_Campaign.png",
     "/blackOps/BO6_MP.png",
     "/blackCell.jpg"]
+
+    type LogoObject = {
+      image: string,
+      title: string
+    }
+
+    const logos: LogoObject[] = [{image:"/xbox-logo.png", title:"XBOX" }, {image:"/windows.png", title:"WINDOWS"}, {image:"/playstation-logotype.png", title:"PLAYSTATION"},{image: "/steam.png", title:"STEAM"}]
+
   return (
     <>
       <Navbar />
@@ -70,12 +80,37 @@ export default function BookYours() {
           </div>
 
           <Tabs defaultValue="account" className="my-5 w-full flex flex-col justify-center items-center">
-            <TabsList className="bg-gray-900 hover:bg-gray-800  rounded-none w-[80%] h-12 gap-5">
+            <TabsList className="bg-gray-900 hover:bg-gray-800  rounded-none w-[90%] md:w-[80%] h-12 gap-5">
               <TabsTrigger value="Vault" >VAULT EDITION</TabsTrigger>
               <TabsTrigger value="Standard" >STANDARD</TabsTrigger>
             </TabsList>
-            <TabsContent value="Vault">Make changes to your account here.</TabsContent>
-            <TabsContent value="Standard">Change your password here.</TabsContent>
+            <TabsContent value="Vault" className="w-full">
+              <div className="w-full px-5 flex flex-col justify-center items-start">
+             <h1 className="text-xl font-extrabold">PRE-ORDER</h1>
+             <p>Choose your platform:</p>
+              </div>
+
+             <div className="w-[392px] px-5 flex flex-wrap gap-5">
+              {   logos.map((logo, index) => 
+                  <button key={index} onClick={()=> setLogoIndex(index)} className={`bg-gray-500/60 hover:bg-gray-500 ${logoIndex === index ? 'bg-gray-500' : ''}  w-32 h-12 pl-4 rounded-lg flex justify-start items-center gap-2 border-[1px] border-white`}><Image src={logo.image} height={25} width={25} alt="logo"/> {logo.title}</button>
+                )
+            }
+
+             </div>
+            </TabsContent>
+            <TabsContent value="Standard" className="w-full">
+
+            <div className="w-full px-5 flex flex-col justify-center items-start">
+             <p>Choose your platform:</p>
+              </div>
+            <div className="w-[392px] px-5 flex flex-wrap gap-5">
+              {   logos.map((logo, index) => 
+                  <button key={index} onClick={()=> setLogoIndex(index)} className={`bg-gray-500/60 hover:bg-gray-500 ${logoIndex === index ? 'bg-gray-500' : ''}  w-32 h-12 pl-4 rounded-lg flex justify-start items-center gap-2 border-[1px] border-white`}><Image src={logo.image} height={25} width={25} alt="logo"/> {logo.title}</button>
+                )
+            }
+
+             </div>
+            </TabsContent>
           </Tabs>
 
 
