@@ -70,7 +70,7 @@ export default function BookYours() {
           </div>
 
           <Tabs defaultValue="account" className="my-5 w-full flex flex-col justify-center items-center">
-            <TabsList className="bg-gray-900 hover:bg-gray-800 flex-wrap rounded-none w-[80%] h-12 gap-5">
+            <TabsList className="bg-gray-900 hover:bg-gray-800  rounded-none w-[80%] h-12 gap-5">
               <TabsTrigger value="Vault" >VAULT EDITION</TabsTrigger>
               <TabsTrigger value="Standard" >STANDARD</TabsTrigger>
             </TabsList>
