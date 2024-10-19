@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="w-screen relative bg-black flex flex-col justify-center items-center mt-10 ">
+    <div className=" w-screen  relative bg-black flex flex-col justify-center items-center mt-10 ">
       <div className="flex flex-wrap mt-10 justify-center items-center gap-10">
         <Link href={"https://www.activision.com/legal"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-lg">Legal</p></Link>|
         <Link href={"https://www.activision.com/legal/terms-of-use"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-lg">Terms of Use</p></Link>|
@@ -14,7 +14,7 @@ export default function Footer() {
         <Link href={"https://www.callofduty.com/values"} target="_blank"><p className="hover:cursor-pointer text-gray-300 text-lg">Code of Conduct</p></Link>|
       </div>
 
-      <p className="h-[1px] w-screen bg-white/50 my-5"></p>
+      <p className="h-[1px] w-[80%] bg-white/50 my-5"></p>
 
       <div className="flex flex-wrap  justify-center items-center gap-8">
         <Image src={"/privacy.jpg"} height={50} width={50} alt="privacy" className="w-28 object-cover"/>

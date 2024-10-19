@@ -6,7 +6,7 @@ function Navbar() {
   const [display, setDisplay] = useState("hidden")
   return (
     <>
-      <div id="navbar" className="z-30 w-screen h-10 bg-gray-800 bg-opacity-30 backdrop-blur-3xl absolute top-3 flex justify-evenly items-center font-gaming text-xl ">
+      <div id="navbar" className="z-30 w-screen  h-10 bg-gray-800 bg-opacity-30 backdrop-blur-3xl absolute top-3 flex justify-evenly items-center font-gaming text-xl ">
       <svg width="138" height="24" viewBox="0 0 138 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M40.4112 0H33.7984V24H45.0392V19.472H40.4112V0Z" fill="white" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M52.784 0H46.1712V24H57.412V19.472H52.784V0Z" fill="white" />
