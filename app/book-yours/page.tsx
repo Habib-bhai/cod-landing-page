@@ -296,13 +296,12 @@ export default function BookYours() {
                 <p>Choose your platform:</p>
               </div>
 
-              <div className="w-[392px] px-5 flex flex-wrap gap-5">
+              <div className="w-[392px] px-5 flex flex-wrap gap-9 md:gap-5">
                 {logos.map((logo, index) =>
-                  <button key={index} onClick={() => setLogoIndex(index)} className={`bg-gray-500/60 hover:bg-gray-500 ${logoIndex === index ? 'bg-gray-500' : ''}  w-32 h-12 pl-3 rounded-lg flex justify-start items-center gap-2 border-[1px] border-white`}><Image src={logo.image} height={25} width={25} alt="logo" /> {logo.title}</button>
-                )
-                }
-
+                  <button key={index} onClick={() => setLogoIndex(index)} className={`bg-gray-500/60 hover:bg-gray-500 ${logoIndex === index ? 'bg-gray-500' : ''}  text-sm w-24 md:w-32 h-12 pl-2 md:pl-3 rounded-lg flex justify-start items-center gap-2 border-[1px] border-white`}><Image src={logo.image} height={20} width={20} alt="logo" /> {logo.title}</button>
+                )}
               </div>
+
             </TabsContent>
             <TabsContent value="Standard" className="w-full">
 
