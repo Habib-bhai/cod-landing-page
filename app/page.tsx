@@ -21,7 +21,7 @@ export default function Home() {
        
          <Navbar/>
       
-        <button className="text-xl font-semibold w-72 h-12 text-white absolute left-12  bottom-40 md:bottom-28 md:left-1/2 bg-[#f96900] hover:bg-[#fb9700] rounded-lg "> PRE-ORDER VAULT EDITION</button>  
+        <Link href={"/book-yours"} onClick={()=> setDataToSend(data[2])}><button className="text-xl font-semibold w-72 h-12 text-white absolute left-12  bottom-40 md:bottom-28 md:left-1/2 bg-[#f96900] hover:bg-[#fb9700] rounded-lg "> PRE-ORDER VAULT EDITION</button></Link>
     </div>
    
    {/* games */}
