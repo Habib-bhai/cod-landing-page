@@ -260,8 +260,11 @@ export default function BookYours() {
         <div className="mt-32 w-[70vw] md:w-[25vw]  bg-black  flex flex-col justify-center items-center  border-[1px] border-white shadow-lg shadow-black font-heading   md:relative md:-top-[900px] md:right-5">
           {/* Choose your platform Section */}
 
-          <div >
-            <Image src={ dataToSend!.logo } height={100} width={100} alt="logo" className="w-72 h-16" />
+          <div>
+            {
+              dataToSend!.logo ?   
+              <Image src={ dataToSend!.logo } height={100} width={100} alt="logo" className="w-72 h-16" /> : undefined
+            }
           </div>
 
           <Tabs defaultValue="account" className="my-5 w-full flex flex-col justify-center items-center">

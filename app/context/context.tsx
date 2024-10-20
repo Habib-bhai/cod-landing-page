@@ -97,6 +97,56 @@ const data: Data[] = [
         ],
          logo: "/warzone-logo-sm.png"
 
+    },
+    {
+        id: 4,
+        title: "BLACK CELL",
+        description: "Enter BlackCell, the Battle Pass offering in Season 6 that has more than 7,000 Call of Duty Points' worth of items*, to be used across both games.",
+        images: ["/blackCell.jpg","/blackCell/blackCell-1.jpg","/blackCell/blackCell-2.jpg", "/blackCell/blackCell-3.jpg", "/blackCell/blackCell-4.jpg", "/blackCell/blackCell-5.jpg"],
+        modes: [
+            {
+                mode: "HAUNT YOUR FOES",
+                modeDescription: "The ghastly Alone fuses three bodies into one in a horrific mutant Operator Skin that animates with dripping blood and a static pulse. ",
+                image: "/blackCell/blackCell-mode1.jpg"
+            },
+            {
+                mode: "MELT YOUR ENEMIES",
+                modeDescription: "The “Ghost Charmer” Assault Rifle, featuring a ghostly animated skin that pulses over the weapon’s stock black and white design.",
+                image: "/blackCell/blackCell-mode2.jpg"
+            },
+            {
+                mode: "THROAT RIP",
+                modeDescription: "Instantly access the “Throat Rip” Finishing Move to silence your targets with a devastating attack to the jugular.",
+                image: "/blackCell/blackCell-mode3.jpg"
+            },
+        ],
+         logo: ""
+
+    },
+    {
+        id: 5,
+        title: "CALL OF DUTY: WARZONE MOBILE",
+        description: "Return to Verdansk and squad up in Rebirth Island with real Call of Duty graphics. Join the next era of combat with Call of Duty: Warzone Mobile!",
+        images: ["/warzone-mobile/warzone-mobile.png","/warzone-mobile/warzone-mobile-1.png","/warzone-mobile/warzone-mobile-2.png", "/warzone-mobile/warzone-mobile-3.png"],
+        modes: [
+            {
+                mode: "WE HAVE THE MAPS",
+                modeDescription: "Explore and dominate all competitors in iconic Battle Royale maps, Verdansk and Rebirth Island. Squad up with friends in Multiplayer maps Shipment, Shoot House, and Scrapyard.",
+                image: "/warzone-mobile/warzone-mobile-mode1.png"
+            },
+            {
+                mode: "LEVEL UP ANYWHERE​",
+                modeDescription: "Play Call of Duty: Warzone Mobile and advance your progression across Call of Duty®: Modern Warfare® III and Call of Duty®: Warzone™.",
+                image: "/warzone-mobile/warzone-mobile-mode1.png"
+            },
+            {
+                mode: "MORE REAL PLAYERS",
+                modeDescription: "Test your skills in battle by surviving and dominating the frontlines against up to 120 real players in exciting Battle Royale matches.",
+                image: "/warzone-mobile/warzone-mobile-mode1.png"
+            },
+        ],
+         logo: ""
+
     }
 ]
 
