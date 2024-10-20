@@ -36,12 +36,7 @@ export default function BookYours() {
     title: string
   }
 
-  type ModesNameAndDescription = {
-    name: string,
-    description: string,
-    image: string
-  }
-
+ 
   const logos: LogoObject[] = [{
     image: "/xbox-logo.png",
     title: "XBOX"
