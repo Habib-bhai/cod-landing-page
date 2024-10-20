@@ -16,10 +16,15 @@ import {
 } from "@/components/ui/accordion"
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { useState } from "react"
-
+import { useContext, useState } from "react"
+import   useDataContext  from "../context/context"
 
 export default function BookYours() {
+
+  const {dataToSend} = useDataContext()
+ 
+
+  // console.log(dataToSend)
   // const [image, setImage]= useState("/blackOps/blackops6.png")
   const [activeIndex, setActiveIndex] = useState(0);
   const [logoIndex, setLogoIndex] = useState(0);

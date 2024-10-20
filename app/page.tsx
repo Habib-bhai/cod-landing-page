@@ -2,12 +2,14 @@ import Image from "next/image";
 import Navbar from "./components/Navbar/Navbar";
 import Card from "./components/card/Card";
 import Link from "next/link";
-import Context from "./context/context";
-import { useContext } from "react";
+import useDataContext  from "./context/context";
+
 
 export default function Home() {
 
-  const {data, setDataToSend} = useContext(Context)
+  const {data, setDataToSend} = useDataContext()
+ 
+  
   return (
     <>
     <div id="hero">
