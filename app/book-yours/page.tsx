@@ -16,8 +16,8 @@ import {
 } from "@/components/ui/accordion"
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { useContext, useState } from "react"
-import   useDataContext  from "../context/context"
+import {  useState } from "react"
+import   { useDataContext }  from "../context/context"
 
 export default function BookYours() {
 
@@ -84,12 +84,14 @@ export default function BookYours() {
   ]
 
   return (
+    
+
     <>
       <Navbar />
       <div className=" w-screen relative mb-20 mt-0 md:mt-5  flex flex-wrap-reverse justify-center items-center gap-10">
         {/* MAIN IMAGE AND CAROUSEL , Descriptioins*/}
         <div className="w-[90vw]  md:w-[60%] md:h-[80%] ">
-          <Image src={images[activeIndex]} height={500} width={500} alt="bg" className="w-full h-full object-center" />
+          <Image src={dataToSend!.images[activeIndex]} height={500} width={500} alt="bg" className="w-full h-full object-center" />
 
           <Carousel
             opts={{
@@ -99,7 +101,7 @@ export default function BookYours() {
             className="mx-20 md:mx-0 md:w-full w-1/2 mt-5 "
           >
             <CarouselContent>
-              {images.map((image, index) =>
+              {dataToSend?.images.map((image, index) =>
 
                 <CarouselItem
                   key={index}
@@ -122,13 +124,13 @@ export default function BookYours() {
           {/* Description Section */}
           <div className="font-heading mt-10">
             <h4 className="text-xl font-bold">CALL OF DUTY</h4>
-            <h1 className="mt-2 text-5xl font-extrabold">BLACK OPS 6</h1>
-            <p className="my-3 tracking-widest">While the Gulf War commands the global spotlight, a shadowy clandestine force has infiltrated the highest levels of the CIA, branding anyone who resists as traitors. Exiled from their agency and country that once hailed them as heroes, Black Ops veteran Frank Woods and his team find themselves hunted by the military machine that created them.</p>
+            <h1 className="mt-2 text-5xl font-extrabold">{dataToSend?.title}</h1>
+            <p className="my-3 tracking-widest">{dataToSend?.description}</p>
             <p className="mb-2 tracking-wide text-lg">Game modes include:</p>
             <ul className="list-disc list-inside">
-              <li>Campaign</li>
-              <li>Multiplayer</li>
-              <li>Zombies</li>
+              <li>{dataToSend?.modes[0].mode}</li>
+              <li>{dataToSend?.modes[1].mode}</li>
+              <li>{dataToSend?.modes[2].mode}</li>
             </ul>
             <p className="mt-3 text-lg">Pre-order the Vault Edition now and get access to additional premium content including BlackCell, and more.</p>
           </div>
@@ -137,13 +139,13 @@ export default function BookYours() {
           <div className="w-full font-heading flex flex-col justify-center items-center mt-5 gap-6">
             <h1 className="my-10 text-start text-5xl font-extrabold w-full">GAME MODES</h1>
             {
-              Modes.map((mode, index) => (
+              dataToSend?.modes.map((mode, index) => (
                 <div key={index} className="flex  md:flex-nowrap flex-wrap  gap-8  justify-center items-center">
                   <Image src={mode.image} height={500} width={500} alt="mode" className="w-96 md:w-80 h-52 text-start" />
 
                   <div >
-                    <h1 className="w-full text-start text-3xl md:text-5xl mb-3 font-extrabold">{mode.name}</h1>
-                    <p className="text-sm">{mode.description}</p>
+                    <h1 className="w-full text-start text-3xl md:text-5xl mb-3 font-extrabold">{mode.mode}</h1>
+                    <p className="text-sm">{mode.modeDescription}</p>
                   </div>
                 </div>
               ))
@@ -287,7 +289,7 @@ export default function BookYours() {
           {/* Choose your platform Section */}
 
           <div >
-            <Image src={"/BO6_Banner.png"} height={100} width={100} alt="logo" className="w-72 h-16" />
+            <Image src={ dataToSend!.logo } height={100} width={100} alt="logo" className="w-72 h-16" />
           </div>
 
           <Tabs defaultValue="account" className="my-5 w-full flex flex-col justify-center items-center">
@@ -329,5 +331,6 @@ export default function BookYours() {
 
 
     </>
+   
   )
 }

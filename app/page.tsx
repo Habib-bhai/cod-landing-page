@@ -1,13 +1,16 @@
+"use client"
 import Image from "next/image";
 import Navbar from "./components/Navbar/Navbar";
 import Card from "./components/card/Card";
 import Link from "next/link";
-import useDataContext  from "./context/context";
+import {useDataContext}  from "./context/context";
+
 
 
 export default function Home() {
 
   const {data, setDataToSend} = useDataContext()
+
  
   
   return (
@@ -39,16 +42,16 @@ export default function Home() {
    {/* Cards */}
 
    <h1 className="text-white font-heading text-4xl font-extrabold ml-5 ">GET THE GAMES :</h1>
-<hr />
+    <hr />
 
 
    <div className="w-screen flex md:flex-nowrap flex-wrap justify-center items-center mt-6 gap-10 md:gap-32">
 
-    <Link href={"/book-yours"}><Card topPx={135} card1="/card1.jpg" logo="/mw3-logo-sm.png" para="CALL OF DUTY" heading="MODERN WARFARE III"/> </Link>
+    <Link href={"/book-yours"}><Card topPx={135} card1="/card1.jpg" logo="/BO6_Banner.png" para="CALL OF DUTY" heading="MODERN WARFARE III"/> </Link>
 
     <Link href={"/book-yours"} onClick={() => setDataToSend(data[1])}><Card topPx={125} card1="/card3.jpg" logo="/warzone-logo-sm.png" para="CALL OF DUTY" heading="WARZONE"/></Link>
 
-    <Card topPx={120} card1="/card4.jpg" logo="/wzm-logo-sm.png" para="CALL OF DUTY" heading="WARZONE MOBILE"/>
+    <Link href={"/book-yours"} onClick={()=> setDataToSend(data[2])}><Card topPx={120} card1="/card4.jpg" logo="/wzm-logo-sm.png" para="CALL OF DUTY" heading="WARZONE MOBILE"/></Link>
    </div>
     </>
   );
