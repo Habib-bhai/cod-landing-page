@@ -29,12 +29,7 @@ export default function BookYours() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [logoIndex, setLogoIndex] = useState(0);
 
-  const images = [
-    "/blackOps/blackops6.png",
-    "/blackOps/B06-1.png",
-    "/blackOps/BO6_Campaign.png",
-    "/blackOps/BO6_MP.png",
-  ]
+ 
 
   type LogoObject = {
     image: string,
@@ -64,24 +59,6 @@ export default function BookYours() {
     title: "STEAM"
   }]
 
-
-  const Modes: ModesNameAndDescription[] = [
-    {
-      name: "CAMPAIGN",
-      image: "/blackOps/BO6_Campaign.png",
-      description: "The Black Ops 6 Campaign provides dynamic moment-to-moment gameplay that includes a variety of play spaces with blockbuster set pieces and action-packed moments, high-stakes heists, and cloak-and-dagger spy activity."
-    },
-    {
-      name: "MULTIPLAYER",
-      image: "/blackOps/BO6_MP.png",
-      description: "In Black Ops 6 Multiplayer, players will test their skills across 16 new maps at launch, including 12 core 6v6 maps and 4 Strike maps that can be played 2v2 or 6v6. Additionally, players will see the return of a more traditional Prestige system, bigger and more rewarding than ever."
-    },
-    {
-      name: "ZOMBIES",
-      image: "/blackOps/B06-1.png",
-      description: "Black Ops 6 also marks the return of Round-Based Zombies, the fan-favorite mode where players will take down hordes of the undead in two brand-new maps at launch. Post-launch, players can look forward to even more exciting maps and groundbreaking experiences dropping into both Multiplayer and Zombies."
-    },
-  ]
 
   return (
     

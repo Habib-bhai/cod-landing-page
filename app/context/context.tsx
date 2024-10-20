@@ -21,7 +21,7 @@ type ContextValue = {
   };
 
 
-let data: Data[] = [
+const data: Data[] = [
     {
         id: 1,
         title: "BLACK OPS 6",
