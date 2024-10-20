@@ -1,8 +1,13 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar/Navbar";
 import Card from "./components/card/Card";
+import Link from "next/link";
+import Context from "./context/context";
+import { useContext } from "react";
 
 export default function Home() {
+
+  const {data, setDataToSend} = useContext(Context)
   return (
     <>
     <div id="hero">
@@ -37,9 +42,9 @@ export default function Home() {
 
    <div className="w-screen flex md:flex-nowrap flex-wrap justify-center items-center mt-6 gap-10 md:gap-32">
 
-    <Card topPx={135} card1="/card1.jpg" logo="/mw3-logo-sm.png" para="CALL OF DUTY" heading="MODERN WARFARE III"/>
+    <Link href={"/book-yours"}><Card topPx={135} card1="/card1.jpg" logo="/mw3-logo-sm.png" para="CALL OF DUTY" heading="MODERN WARFARE III"/> </Link>
 
-    <Card topPx={125} card1="/card3.jpg" logo="/warzone-logo-sm.png" para="CALL OF DUTY" heading="WARZONE"/>
+    <Link href={"/book-yours"} onClick={() => setDataToSend(data[1])}><Card topPx={125} card1="/card3.jpg" logo="/warzone-logo-sm.png" para="CALL OF DUTY" heading="WARZONE"/></Link>
 
     <Card topPx={120} card1="/card4.jpg" logo="/wzm-logo-sm.png" para="CALL OF DUTY" heading="WARZONE MOBILE"/>
    </div>

@@ -29,7 +29,7 @@ export default function BookYours() {
     "/blackOps/B06-1.png",
     "/blackOps/BO6_Campaign.png",
     "/blackOps/BO6_MP.png",
-    "/blackCell.jpg"]
+  ]
 
   type LogoObject = {
     image: string,
@@ -298,7 +298,7 @@ export default function BookYours() {
 
               <div className="w-[392px] px-5 flex flex-wrap gap-9 md:gap-5">
                 {logos.map((logo, index) =>
-                  <button key={index} onClick={() => setLogoIndex(index)} className={`bg-gray-500/60 hover:bg-gray-500 ${logoIndex === index ? 'bg-gray-500' : ''}  text-sm w-24 md:w-32 h-12 pl-2 md:pl-3 rounded-lg flex justify-start items-center gap-2 border-[1px] border-white`}><Image src={logo.image} height={20} width={20} alt="logo" /> {logo.title}</button>
+                  <button key={index} onClick={() => setLogoIndex(index)} className={`bg-gray-500/60 hover:bg-gray-500 ${logoIndex === index ? 'bg-gray-500' : ''}  text-[12px] md:text-sm w-24 md:w-32 h-12 pl-1 md:pl-3 rounded-lg flex justify-start items-center gap-2 border-[1px] border-white`}><Image src={logo.image} height={20} width={20} alt="logo" /> {logo.title}</button>
                 )}
               </div>
 
