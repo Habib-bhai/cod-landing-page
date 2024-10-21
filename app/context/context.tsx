@@ -137,12 +137,12 @@ const data: Data[] = [
             {
                 mode: "LEVEL UP ANYWHERE​",
                 modeDescription: "Play Call of Duty: Warzone Mobile and advance your progression across Call of Duty®: Modern Warfare® III and Call of Duty®: Warzone™.",
-                image: "/warzone-mobile/warzone-mobile-mode1.png"
+                image: "/warzone-mobile/warzone-mobile-mode2.png"
             },
             {
                 mode: "MORE REAL PLAYERS",
                 modeDescription: "Test your skills in battle by surviving and dominating the frontlines against up to 120 real players in exciting Battle Royale matches.",
-                image: "/warzone-mobile/warzone-mobile-mode1.png"
+                image: "/warzone-mobile/warzone-mobile-mode3.png"
             },
         ],
          logo: ""
